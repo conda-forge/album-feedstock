@@ -1,5 +1,5 @@
 {% set name = "album" %}
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a2ab11b8a9b210a1ca090a53f6eb99c60e67cc334b59c6bd9d4b95592b95222
+  sha256: a02091d665bf02afbc930f18220c784315f86a988b19d993ad111746b3d3126b
 
 build:
   number: 0
