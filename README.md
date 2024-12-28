@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@frauzufall](https://github.com/frauzufall/)
+* [@jpalbrecht](https://github.com/jpalbrecht/)
 
