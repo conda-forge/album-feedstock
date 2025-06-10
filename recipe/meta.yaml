@@ -10,7 +10,7 @@ source:
   sha256: 56cabcd054a3f4f1c4665964a4efc76144e9b12f90b4e78874ee38a6831b94d3
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - pip
-    - python >=3.7
+    - python >={{ python_min }}
     - pyyaml >=6.0
     - validators >=0.18.2
     - git >=2.37
@@ -46,6 +46,7 @@ test:
     - album --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://album.solutions
