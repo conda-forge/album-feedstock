@@ -55,7 +55,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Album is a framework for unifying computational tools across frameworks, languages, and environments
+  summary: Album is a framework for unifying computational tools across frameworks, languages, and environments.
   doc_url: https://docs.album.solutions
   dev_url: https://gitlab.com/album-app/album
 
