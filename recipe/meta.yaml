@@ -1,5 +1,5 @@
 {% set name = "album" %}
-{% set version = "0.12.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 30982509eae4b7d28f1a09b2587455d0084d2c3aad66f90301f60fbff0f810f1
+  sha256: f25e2649d84e15407be8eb792f25a87d83fef520fb8c35f743dadcab5a97ae7f
 
 build:
   number: 0
@@ -24,19 +24,17 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - album-solution-api >=0.7.0,<0.8.0
-    - album-environments >=0.3.0,<0.4.0
+    - album-solution-api >=0.7.3,<0.8.0
+    - album-environments >=0.3.4,<0.4.0
     - pyyaml >=5.4.1
     - validators >=0.18.2
     - git >=2.37
     - gitpython >=3.1.13
     - requests >=2.25.1
-    - pexpect >=4.8.0
     - jsonschema >=4.0.0
     - colorlog >=6.6.0
     - pywin32-on-windows >=0.1.0
     - packaging >=21.3
-    - pre-commit >=2.20.0
     - pooch >=1.4.0
 
 test:
